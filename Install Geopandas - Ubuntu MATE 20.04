@@ -1,0 +1,18 @@
+#How to install Geopandas
+#Ubuntu Mate 20.04 Raspberry Pi 4 Model B
+#32bit
+
+sudo apt-get update
+sudo pip3 install pandas
+sudo pip3 install Rtree
+sudo apt-get install gdal-bin
+ogrinfo --version #Check if it is installed
+sudo apt-get install libgdal-dev
+export CPLUS_INCLUDE_PATH=/usr/include/gdal
+export C_INCLUDE_PATH=/usr/include/gdal
+sudo pip3 install GDAL
+sudo pip3 install rasterio
+sudo pip3 install fiona
+sudo pip3 install pyproj==2.2.0
+sudo pip3 install geopandas
+

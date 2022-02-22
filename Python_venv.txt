@@ -1,0 +1,38 @@
+*********Process to create a venv for a Project***********
+
+1) Create a project directory/folder. e.g. SA077
+
+2) Navigate into the project folder.
+
+3) Create virtual environment by using the following terminal command:
+	python3 -m venv venv
+
+4) Activate virtual environment by using the following terminal command:
+	venv\Scripts\activate.bat
+	You can tell if you are in, or activated, your virtual enviroment by seeing the environment name will be in parenthesis.
+
+5) To check what packages have been installed in you venv use the following command:
+	pip list
+	Intially there will onlly be 'pip' and 'setuptools' installed.
+
+6) Deactivate virtual environment by using the following terminal command: deactivate
+
+***********Remove/delete venv***************
+
+1) Use the following command:
+	rmdir venv /s
+
+************Creating a requirements file**************
+(Used to specify which packages you want to install for a specific venv)
+
+1) Use the following command to get the list of the environment packages you require for your new venv:
+	pip freeze
+
+2) Copy packages list displayed in terminal and paste it in a new text file named "requirements.txt". (Remove unecessary packes from list)
+
+3) Place "requirements.txt" file in project folder.
+
+4) Navigate to project folder and activate venv.
+
+5) Once venv is activated you can install all required packages from the "requirements.txt" file using the following command:
+	pip install -r requirements.txt

@@ -1,0 +1,12 @@
+-	Wire pi and GPS according to: https://learn.adafruit.com/adafruit-ultimate-gps/circuitpython-parsing
+-	Disable console and enable serial UART: https://learn.adafruit.com/circuitpython-on-raspberrypi-linux/uart-serial
+
+-	Install required libraries: https://learn.adafruit.com/circuitpython-on-raspberrypi-linux/installing-circuitpython-on-raspberry-pi
+	-	Enable I2C & SPI if necessary for sensor
+	-	sudo pip3 install --upgrade setuptools
+	-	pip3 install RPI.GPIO
+	-	pip3 install adafruit-blinka
+	-	sudo pip3 install adafruit-circuitpython-gps
+	
+-	Download gps_simpletest.py file and make required changes: https://learn.adafruit.com/adafruit-ultimate-gps/circuitpython-python-uart-usage
+	-	Ensure the correct UART port is defined (/dev/ttyAMA0 worked for me)
